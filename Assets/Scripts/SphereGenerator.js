@@ -11,10 +11,10 @@ var bluesphere:Rigidbody;
 
 function generatesphere () {
 	
-	//create a random number from 1 to 4
+	//create a random number from 1 to 5
 	var colornumber:int;
 	
-	colornumber = Random.Range(1,4);
+	colornumber = Random.Range(1,5);
 	
 	Debug.Log(colornumber);
 	
