@@ -6,6 +6,11 @@
 function Start () {
 
 }
+function OnGUI()
+{
+	GUI.Label(Rect(0,0,100,50),"X: "+Input.mousePosition.x + "  " + Input.mousePosition.y);
+}
+
 
 function Update () {
 	var leftmostonscreen:float;
@@ -33,5 +38,7 @@ function Update () {
 	}
 	
 	transform.Translate(Vector3.right * 5 * Input.GetAxis("Horizontal") * Time.deltaTime);
-
+	//mouse control.
+	transform.position.x = Camera.main.ScreenToWorldPoint(Input.mousePosition).x;
+	
 }
